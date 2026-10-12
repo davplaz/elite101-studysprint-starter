@@ -50,6 +50,7 @@ def top_card(cards):
 
 
 def percent_correct(score, total):
+    """Return the score as a whole-number percentage of the total, or 0 if the total is 0."""
     if total == 0:
         return 0
     return round(100 * score / total)
